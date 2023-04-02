@@ -1,0 +1,10 @@
+version: '3'
+services:
+    apache:
+    image: php:apache
+    container_name: apache
+    volumes:
+        - ./my_web/:/var/www.html:ro
+     ports: 
+        - 80:80
+     restart: always
